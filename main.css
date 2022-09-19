@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("./images/pattern-background-mobile.svg") #E0E8FF no-repeat;
+  background-size: contain;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+@media (min-width: 40rem) {
+  body{
+    background: url("./images/pattern-background-desktop.svg") #E0E8FF no-repeat;
+    background-size: contain;
+  }
+}
+
+.main-box {
+  background: #FFFFFF;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+  border-radius: 20px;
+  width: 327px;
+  height: 567px;
+  overflow: hidden;
+}
+
+.background-content {
+  background: url("./images/illustration-hero.svg");
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+}
+.content-box {
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 407px;
+}
+.title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 29px;
+  text-align: center;
+  color: #1F2E55;
+}
+
+.description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #717FA6;
+}
+
+.detail {
+  width: 279px;
+  height: 81px;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  justify-content: space-between;
+  background: #F7F9FF;
+  border-radius: 11px;
+}
+
+.detail-icon {
+  width: 48px;
+  height: 48px;
+  background: url("./images/icon-music.svg");
+  background-size: cover;
+}
+
+.detail-desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-desc__text {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1F2E55;
+}
+
+.detail-desc__value {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #717FA6;
+}
+
+.detail-link {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17px;
+  text-decoration-line: underline;
+  color: #382AE1;
+}
+
+.detail-link:hover {
+  color: #766CF1;
+  text-decoration-line: none;
+  cursor: pointer;
+}
+
+.button {
+  width: 279px;
+  height: 50px;
+  background: #382AE1;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  border-radius: 11px;
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+  outline-style: none;
+  border: none;
+}
+.button:hover {
+  background: #766CF1;
+  cursor: pointer;
+}
+.cancel {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+  color: #717FA6;
+}
+.cancel:hover {
+  color: #1F2E55;
+  cursor: pointer;
+}
